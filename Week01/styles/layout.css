@@ -2,13 +2,13 @@ body {
     Font-Family: 'Roboto' , sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #cfc6c6;
-  color: #333;
+  background-color: #dddfdd;
+  color: #000000;
 }
 
 header {
-  background-color: #4a6e91;
-  color: white;
+  background-color: #026fdb;
+  color: rgb(0, 0, 0);
   padding: 1rem;
   text-align: center;
 }
@@ -17,4 +17,31 @@ header {
   display: block;
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+nav a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 0.5rem;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #026fdb;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
 }
