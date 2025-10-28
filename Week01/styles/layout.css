@@ -1,0 +1,20 @@
+body {
+    Font-Family: 'Roboto' , sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #cfc6c6;
+  color: #333;
+}
+
+header {
+  background-color: #4a6e91;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+#course-title {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
