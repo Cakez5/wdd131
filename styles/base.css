@@ -1,5 +1,12 @@
+#course-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000000;
+}
+
+
 body {
-    Font-Family: 'Roboto' , sans-serif;
+  Font-Family: 'Roboto' , sans-serif;
   margin: 0;
   padding: 0;
   background-color: #dddfdd;
@@ -13,10 +20,13 @@ header {
   text-align: center;
 }
 
-#course-title {
-  display: block;
-  font-size: 1.5rem;
-  font-weight: bold;
+main{
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav {
