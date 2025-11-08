@@ -34,7 +34,12 @@ nav a {
 footer {
   position: sticky;
   bottom: 0;
-background-color: #627b94;
+  background-color: #627b94;
   color: #000000;
+}
 
+nav a:hover {
+  background-color: #d1dbe5;
+  color: #a81212;
+  text-decoration: underline;
 }
