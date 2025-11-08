@@ -1,59 +1,40 @@
+header {
+  width: 100%;
+  background-color: #627b94;
+  color: #000000;
+  padding: 1rem 0;
+  text-align: center;
+  flex-shrink: 0; /* Prevent header from shrinking */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 #course-title {
   font-size: 2rem;
   font-weight: 700;
-  color: #000000;
-}
-
-body {
-  Font-Family: 'Roboto' , sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #dddfdd;
-  color: #000000;
-}
-
-header {
-  background-color: #627b94;
-  color: rgb(0, 0, 0);
-  padding: 1rem;
-  text-align: center;
-}
-
-main{
-  padding: 2rem;
-  max-width: 1000px;
-  margin: 2rem auto;
-  background-color: #adabab;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 1rem;
   margin-top: 0.5rem;
+  padding: 0.5rem 0;
 }
 
 nav a {
-  color: rgb(0, 0, 0);
+  color: #000000;
   text-decoration: none;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   transition: background-color 0.3s;
-}
-
-nav a:hover {
-  background-color: #d85252;
   border-radius: 5px;
 }
 
 footer {
-  background-color: #627b94;
-  color: rgb(0, 0, 0);
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-  position: absolute;
+  position: sticky;
   bottom: 0;
-  width: 100%;
+background-color: #627b94;
+  color: #000000;
+
 }
