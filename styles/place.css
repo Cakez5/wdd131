@@ -19,16 +19,25 @@ header {
 }
 
 nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
   margin-top: 0.5rem;
 }
 
 nav a {
   color: var(--text-color);
-  margin: 0 10px;
   text-decoration: none;
 }
 
+nav a:hover {
+  text-decoration: underline;
+  color: #ffcc00;
+}
+
 main {
+  max-width: 900px;
+  margin: 0 auto;
   padding: 1rem;
 }
 
@@ -50,6 +59,9 @@ main {
 
 /* Facts section */
 .facts ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
   list-style: none;
   padding: 0;
 }
@@ -69,6 +81,13 @@ footer {
 /* Mobile-only SVG icon */
 .mobile-only {
   display: none;
+}
+
+@media (max-width: 600px) {
+  .mobile-only {
+    display: block;
+    width: 50px;
+  }
 }
 
 /* Pseudo-element emoticon (desktop only) */
