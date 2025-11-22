@@ -1,0 +1,82 @@
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background: #004466;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+main {
+  padding: 1rem;
+}
+
+/* Hero image */
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Weather section */
+.weather {
+  background: #f0f8ff;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+}
+
+/* Facts section */
+.facts ul {
+  list-style: none;
+  padding: 0;
+}
+
+.facts li {
+  margin: 0.5rem 0;
+}
+
+/* Footer */
+footer {
+  background: #004466;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Mobile-only SVG icon */
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .mobile-only {
+    display: block;
+    width: 50px;
+    height: auto;
+  }
+}
+
+/* Pseudo-element emoticon (desktop only) */
+@media (min-width: 768px) {
+  h1::after {
+    content: "😊";
+    margin-left: 10px;
+  }
+}

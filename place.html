@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Country Page - [Your Country]</title>
+  <meta name="author" content="Zakary Martinsen">
+  <meta name="description" content="A country page showcasing weather, facts, and images for [Your Country].">
+  <link rel="stylesheet" href="styles/place.css" />
+  <script src="place.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Discover [Your Country]</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Culture</a>
+      <a href="#">Weather</a>
+      <a href="#">Gallery</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img 
+        src="images/hero-small.webp" 
+        srcset="images/hero-small.webp 600w, images/hero-large.webp 1200w" 
+        sizes="(max-width: 600px) 600px, 1200px"
+        alt="Scenic view of [Your Country]" />
+    </section>
+    <!-- Weather Section -->
+    <section class="weather">
+      <h2>Current Weather</h2>
+      <img src="images/weather.svg" alt="Weather icon" class="mobile-only" />
+      <p>Temperature: <span id="temp">45</span>°F</p>
+      <p>Wind Speed: <span id="wind">10</span> mph</p>
+      <p id="windChill"></p>
+    </section>
+    <!-- Facts Section -->
+    <section class="facts">
+      <h2>Quick Facts</h2>
+      <ul>
+        <li>Capital: Example City</li>
+        <li>Population: 10 million</li>
+        <li>Language: Example Language</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Zakary Martinsen | Utah, USA | 🏐</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
