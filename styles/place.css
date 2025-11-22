@@ -1,3 +1,8 @@
+:root {
+  --primary-color: #004466;
+  --accent-color: #f0f8ff;
+  --text-color: white;
+}
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -7,8 +12,8 @@ body {
 }
 
 header {
-  background: #004466;
-  color: white;
+  background: var(--primary-color);
+  color: var(--text-color);
   padding: 1rem;
   text-align: center;
 }
@@ -18,7 +23,7 @@ nav {
 }
 
 nav a {
-  color: white;
+  color: var(--text-color);
   margin: 0 10px;
   text-decoration: none;
 }
@@ -29,14 +34,15 @@ main {
 
 /* Hero image */
 .hero img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   display: block;
+  border-radius: 8px;
 }
 
 /* Weather section */
 .weather {
-  background: #f0f8ff;
+  background: var(--accent-color);
   padding: 1rem;
   margin: 1rem 0;
   border-radius: 8px;
@@ -54,8 +60,8 @@ main {
 
 /* Footer */
 footer {
-  background: #004466;
-  color: white;
+  background: var(--primary-color);
+  color: var(--text-color);
   text-align: center;
   padding: 1rem;
 }
@@ -75,8 +81,8 @@ footer {
 
 /* Pseudo-element emoticon (desktop only) */
 @media (min-width: 768px) {
-  h1::after {
-    content: "😊";
+  .weather h2::after {
+    content: "⛅";
     margin-left: 10px;
   }
 }
