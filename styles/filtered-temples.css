@@ -58,6 +58,23 @@ nav a:hover {
   padding: 1rem;
 }
 
+/* Temple card styling */
+.temple-card {
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.temple-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-top: 0.5rem;
+}
+
 /* Desktop styles */
 @media screen and (min-width: 768px) {
   .grid {
@@ -78,20 +95,4 @@ nav a:hover {
   #hamburger {
     display: none;        /* hide hamburger on desktop */
   }
-}
-
-.temple-card {
-  background: #f9f9f9;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 1rem;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.temple-card img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 6px;
-  margin-top: 0.5rem;
 }
