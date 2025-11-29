@@ -69,13 +69,13 @@ const temples = [
     area: 54000,
     imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/nauvoo-illinois-temple/nauvoo-illinois-temple-6351-thumb.jpg"
   },
-    {
+  {
     templeName: "Red Cliffs Utah Temple",
     location: "St. George, Utah",
-    dedicated: "2024-02-01, 2024-03-02",
+    dedicated: "2024-03-24",
     area: 96277,
     imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/red-cliffs-utah-temple/red-cliffs-utah-temple-66151-thumb.jpg"
-    }
+  }
 ];
 
 // ---------------- Card Creation + Display ----------------
