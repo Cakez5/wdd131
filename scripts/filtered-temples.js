@@ -96,6 +96,12 @@ function createTempleCard(temple) {
 function displayTemples(filteredTemples) {
   const container = document.querySelector("#temples-container");
   container.innerHTML = ""; // clear previous
+
+  if (filteredTemples.length === 0) {
+    container.innerHTML = "<p>No temples match this filter.</p>";
+    return;
+  }
+
   filteredTemples.forEach(t => container.appendChild(createTempleCard(t)));
 }
 
