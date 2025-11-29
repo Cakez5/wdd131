@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temple Album</title>
+  <meta name="author" content="Zakary Martinsen">
+  <meta name="description" content="A temple album to show off the many different temples of the world.">
+  <link rel="stylesheet" href="styles/filtered-temples.css" />
+  <script src="scripts/filtered-temples.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+  <header>
+    <h1>Temple Album</h1>
+    <button id="hamburger" aria-label="Toggle navigation">&#9776;</button>
+    <nav id="menu">
+      <a id="home" href="#">Home</a>
+      <a id="old" href="#">Old</a>
+      <a id="new" href="#">New</a>
+      <a id="large" href="#">Large</a>
+      <a id="small" href="#">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Temples Around the World</h2>
+    <section id="temples-container" class="grid"></section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Zakary Martinsen | Utah, USA | 🏐</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
