@@ -1,0 +1,74 @@
+header, footer {
+  text-align: center;
+  padding: 1rem;
+  background: #3273a1;
+  color: #fff;
+}
+
+footer {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  line-height: 1.6;
+  background: linear-gradient(-45deg, #0077cc, #00c6ff, #6dd5ed, #fff);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  padding: 1em;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+}
+
+label, legend {
+  display: block;
+  margin-top: 10px;
+}
+
+input, select, textarea {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+input:focus, select:focus, textarea:focus {
+  border-color: #3273a1;
+  box-shadow: 0 0 6px rgba(50,115,161,0.4);
+}
+
+input[type="submit"] {
+  background: #0077cc;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: #005fa3;
+}
+
+.submit-box {
+  text-align: center;
+  margin-top: 20px;
+  padding: 1rem;
+  background: #f0f4f8;
+  border-radius: 6px;
+}
+form {
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  background: rgba(255,255,255,0.9);
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Submitted</title>
+  <link rel="stylesheet" href="styles/form.css">
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      // Get current count or start at 0
+      let count = localStorage.getItem("reviewCount") || 0;
+      count++;
+      localStorage.setItem("reviewCount", count);
+
+      // Show the updated count
+      document.getElementById("counter").textContent = count;
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Thank you for your review!</h1>
+  </header>
+
+  <main>
+    <p>Your review has been submitted successfully.</p>
+    <p>You have submitted <strong><span id="counter"></span></strong> reviews so far.</p>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Zakary Martinsen | Utah, USA</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+  <script>
+    // Footer info
+    document.getElementById("currentyear").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
+  </script>
+</body>
+</html>
