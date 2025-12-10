@@ -1,3 +1,13 @@
+/* === Color Variables === */
+:root {
+  --brand-orange: #ff8c00;   /* vivid dark orange */
+  --brand-red:    #d6310c;   /* strong crimson red */
+  --brand-gold:   #ffd700;   /* classic gold */
+  --text-dark:    #0c0c0c;   /* near-black text */
+  --border-gray:  #ccc;      /* light gray borders */
+  --bg-white:     #fff;      /* pure white */
+}
+
 /* === Aurora Background === */
 @keyframes aurora {
   0%   { background-position: 0% 50%; }
@@ -13,11 +23,12 @@ body {
   animation: aurora 20s ease infinite;
   margin: 0;
   font-family: Arial, sans-serif;
+  color: var(--text-dark);
 }
 
 /* === Header === */
 header {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.8); /* semi-transparent overlay */
   padding: 10px 20px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
@@ -38,6 +49,7 @@ header h1 {
   align-items: center;
   font-weight: bold;
   font-size: 1.2rem;
+  color: var(--text-dark);
 }
 
 .navbar-brand img {
@@ -58,8 +70,8 @@ header h1 {
 
 /* === Content Box === */
 .content-box {
-  background-color: #fff;
-  border: 1px solid #ccc;
+  background-color: var(--bg-white);
+  border: 1px solid var(--border-gray);
   padding: 20px;
   border-radius: 10px;
   margin-top: 20px;
@@ -75,5 +87,6 @@ footer {
   text-align: center;
   padding: 15px;
   background-color: rgba(255,255,255,0.8);
-  border-top: 1px solid #ccc;
+  border-top: 1px solid var(--border-gray);
+  color: var(--text-dark);
 }
